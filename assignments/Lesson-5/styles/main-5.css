@@ -10,7 +10,7 @@ body {
     margin-top: 0px;
     font-size: 16px; 
     line-height: 32px;
-    font-family: serif;
+    font-family: 'Raleway', sans-serif;
     color: cornflowerblue; /*color of text*/
     padding-bottom: 20px;
     margin-left: auto;
@@ -74,6 +74,12 @@ h1 {
 }
 
 header img {    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.figure {    
     display: block;
     margin-left: auto;
     margin-right: auto;
