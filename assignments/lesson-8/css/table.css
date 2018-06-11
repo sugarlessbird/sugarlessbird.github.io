@@ -1,0 +1,56 @@
+table {
+    margin: auto;
+    font-family: sans-serif;
+    font: Ubuntu;
+    box-shadow: 5px 5px 1px #6f8ba9;
+}
+
+th, td {
+    border: 1px solid grey;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+   
+}
+
+th { 
+    background: #7FB9C2;
+    color: black ;
+    padding: 15px;
+    
+}
+
+tr:nth-child(even) {
+    background-color: #e7ffed;
+    padding: 8px;
+}
+
+tr:nth-child(odd) {
+    background-color:#e7f0ed;
+    padding: 8px;
+}
+
+
+.italics {
+    font-style: italic;
+
+}
+.sales {
+    
+    background: #6f8ba9;
+    color: white;
+    
+    
+}
+
+.november {
+    background: #6f8ba9;
+    color: white;
+    
+}
+
+tfoot {
+    background: #7FB9C2;
+    color: black;
+    font-size: .8em;
+}
