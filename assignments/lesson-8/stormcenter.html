@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>
+    Franklin Weather Center
+</title>
+    <meta name="description" content="Franklin Weather Center Page, Amanda Bird, CIT230">
+    <link rel="stylesheet" href= "../../styles/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../lesson-7/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+   <script src="../lesson-7/js/hamburger.js"></script>
+    <script src="js/rating.js"></script>
+    
+    
+    
+    
+</head>
+<body>
+
+  <header>
+      <img src="../lesson-7/images/city%20logo.png" alt="Franklin City Logo">
+  </header>
+    
+    
+             
+
+
+ 
+<nav>
+    <div class="topnav" id="myTopnav">
+  <a href="../lesson-7/franklin-7.html">Home</a>
+  <a href="#news">Franklin</a>
+  <a href="#contact">Greenville</a>
+  <a href="#about">Springfield</a>
+  <a href="#about" class="active">Storm Center</a>
+  <a href="../lesson-7/gallery-7.html">Gallery</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+    </nav>
+  <main>
+     <h3>HTML Forms</h3>
+
+<form action="thanks.html">
+  Full Name:<br>
+  <input type="text" name="name" value="" required>
+  <br>
+    Email:<br>
+  <input type="text" name="email" value="yourname@email.com">
+  <br>
+    Phone:<br>
+  <input type="tel" name="phone" value="###-###-####" required>
+  <br>Zip:<br>
+  <input type="number" name="zip" value="" required>
+  <br>Storm Date:<br>
+  <input type="date" name="stormdate" value="">
+  <br>Storm Type:<br>
+    <input list="stormtype">
+  <datalist id="stormtype">
+      <option value="flashflood">Flash Flood</option>
+      <option value="hail">Hail</option>
+      <option value="hurricane">Hurricane</option>
+      <option value="thunderstorm">Thunder</option>
+      <option value="sharknado">SharkNado</option>
+    </datalist>
+    <br>
+  <label for="rating">Storm Severity (1 to 10):</label><br>
+		<input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+    <br>
+		<span id="ratingvalue">5</span><br><br>Storm Region:<br>
+  <select name="stormregion">
+      <option selected disabled>Select Region</option>
+      <option value="franklin">Franklin</option>
+      <option value="greenville">Greenville</option>
+      <option value="springfield">Springfield</option>
+    </select>
+  <br><input type="radio" id="dangerYes"
+     name="danger" value="yes">
+    <label for="dangerYes">YES</label>
+
+    <input type="radio" id="dangerMaybe"
+     name="danger" value="maybe">
+    <label for="dangerMaybe">Maybe</label>
+    <input type="radio" id="dangerNo"
+     name="danger" value="no">
+    <label for="dangerNo">No</label>
+  <br>Weather Comments:<br>
+  <textarea name="comments" value="" rows="5" cols="20">
+    Comments Here
+    </textarea>
+  <br><br>
+  <input type="submit" value="Submit">
+</form>    
+  
+  </main>
+    
+  <footer>
+    <section class="contact">
+      Franklin Weather Center
+      800-123-1234
+      123 Main St. Franklin,MI US 99999
+     <!-- Google Map-->
+    </section>
+    <section class="footer-bar">&copy;2018 | All Rights Reserved | Franklin Weather Center | <span id="day"> Date Placeholder</span>
+    </section>
+  </footer>
+
+    <script src="../lesson-7/js/currentdate.js"></script>
+     <script src="../lesson-7/js/windchill.js"></script>
+
+    <script>
+        
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+    </script>
+   
+
+        
+
+   
+    </body>
+</html>

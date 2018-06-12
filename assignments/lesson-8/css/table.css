@@ -6,10 +6,11 @@ table {
 }
 
 th, td {
-    border: 1px solid grey;
+    border: .5px solid grey;
     text-align: center;
     padding-left: 5px;
     padding-right: 5px;
+    
    
 }
 
@@ -18,16 +19,21 @@ th {
     color: black ;
     padding: 15px;
     
+    
+}
+
+tr {
+    height: 30px;
 }
 
 tr:nth-child(even) {
-    background-color: #e7ffed;
-    padding: 8px;
+    background-color:#8AB8AD;
+    
 }
 
 tr:nth-child(odd) {
-    background-color:#e7f0ed;
-    padding: 8px;
+    background-color:lightgray;
+    
 }
 
 
@@ -39,6 +45,8 @@ tr:nth-child(odd) {
     
     background: #6f8ba9;
     color: white;
+    
+   
     
     
 }
