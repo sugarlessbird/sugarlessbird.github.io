@@ -70,6 +70,19 @@ h6 {
 }
 
 
+h7 {
+    font-size: 20px ;
+   text-align: center;
+    
+}
+
+article {
+    
+    text-align: center;
+    padding-bottom: 400px;
+}
+
+
 form {
     font-size: 20px ;
     text-align: center;
@@ -80,7 +93,7 @@ header, main, footer {
     
 }
 
-footer, footer a {
+footer {
     position:fixed;
     text-align:center;
     background-color: ivory;
@@ -89,6 +102,7 @@ footer, footer a {
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
+
 }
 
 h1 {
