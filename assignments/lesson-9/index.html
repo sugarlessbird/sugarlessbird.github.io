@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>
+    Franklin Weather Center
+</title>
+    <meta name="description" content="Franklin Weather Center Page, Amanda Bird, CIT230">
+    <link rel="stylesheet" href= "../../styles/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../lesson-7/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+   <script src="../lesson-7/js/hamburger.js"></script>
+    
+    
+    
+    
+</head>
+<body>
+
+  <header>
+      <img src="../lesson-7/images/city%20logo.png" alt="Franklin City Logo">
+  </header>
+    
+    
+             
+
+
+ 
+<nav>
+    <div class="topnav" id="myTopnav">
+  <a href="../lesson-9/index.html" class="active">Home</a>
+  <a href="../lesson-9/franklin.html">Franklin</a>
+  <a href="../lesson-9/greenville.html">Greenville</a>
+  <a href="../lesson-9/springfield.html">Springfield</a>
+  <a href="../lesson-8/stormcenter.html">Storm Center</a>
+  <a href="../lesson-7/gallery-7.html">Gallery</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+    </nav>
+  <main>
+        <h2>Franklin Weather Center</h2>
+    <figure class="figure">
+        <img src="../lesson-7/images/franklin-large.jpeg" alt="bluesky" sizes="50vw" 
+             srcset="../lesson-7/images/franklin-medium.jpeg 800w
+                     ../lesson-7/images/franklin-small.jpeg 400w
+                     ">
+    </figure>
+       <section class="weather summary">
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="2">Franklin Current Weather</th>
+                        </tr>
+                    </thead>
+                    <tbody>  
+                        <tr>
+                            <td>Current Temprature</td>
+                            <td><span id="current-temp"></span></td>
+                        </tr>
+                        <tr>
+                            <td>High</td>
+                            <td><span id='high-temp'></span>°F</td>
+                        </tr>
+                        <tr>
+                            <td>Low</td>
+                            <td><span id='low-temp'></span>°F</td>
+                        </tr>
+                        <tr>
+                            <td>Weather Description</td>
+                            <td><span id="weather-description"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Max Wind</td>
+                            <td><span id='wind-speed'></span> mph</td>
+                        </tr>
+                        <tr>
+                            <td>Windchill</td>
+                            <td><span id="windchill"></span>°F</td>
+                        </tr>
+                         <tr>
+                            <th colspan="2"><img src="images/placeholder.png" alt="current weather" id='weather_icon'>
+                            <script src='../lesson-8/js/weatherapi.js'></script>
+                             </th>
+                        </tr>
+                    </tbody>
+                </table>
+           <script src="js/weather.js"></script>
+           <script src="../lesson-7/js/windchill.js"></script>
+            </section>
+
+ <section class="forecast">
+      <h3>Ten Day Forecast</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Day 1</th>
+            <th>Day 2</th>
+            <th>Day 3</th>
+            <th>Day 4</th>
+            <th>Day 5</th>
+            <th>Day 6</th>
+            <th>Day 7</th>
+            <th>Day 8</th>
+            <th>Day 9</th>
+            <th>Day 10</th>
+          </tr>
+	</thead>
+        <tbody>  
+          <tr>
+            <td>89&deg;F</td>
+            <td>87&deg;F</td>
+            <td>78&deg;F</td>
+            <td>75&deg;F</td>
+            <td>72&deg;F</td>
+            <td>72&deg;F</td>
+            <td>79&deg;F</td>
+            <td>83&deg;F</td>
+            <td>85&deg;F</td>
+            <td>89&deg;F</td>
+          </tr>
+	</tbody>
+      </table>
+    </section>
+      
+    
+      <div class="table2">
+            <h4>Franklin Facts and Events</h4>
+        <div>Franklin Name:<span id="franklin-name"></span></div>
+        
+          <div>Franklin Motto: <span id="franklin-motto"></span></div>
+        
+        <div>Year Founded: <span id="franklin-founded"></span></div>
+        
+        <div>Current Population: <span id="franklin-current-pop"></span></div>
+        
+         <div>Average Rainfall: <span id="franklin-rainfall"></span> inches</div>
+        
+        <div>Franklin Events: <span id="franklin-events"></span></div>
+            
+            <div class="table3">
+            <h5> Springfield Facts and Events</h5>
+        <div>Springfield Name: <span id="springfield-name"></span></div>
+        
+        <div>Springfield Motto: <span id="springfield-motto"></span></div>
+        
+        <div>Year Founded: <span id="springfield-founded"></span></div>
+        
+        <div>Current Population: <span id="springfield-current-pop"></span></div>
+        
+         <div>Average Rainfall: <span id="springfield-rainfall"></span> inches</div>
+        
+        <div>Springfield Events: <span id="springfield-events"></span></div>
+           
+          
+          <div class="table3">
+            <h5> Greenville Facts and Events</h5>
+        <div>Greenville Name: <span id="greenville-name"></span></div>
+        
+        <div>Greenville Motto: <span id="greenville-motto"></span></div>
+        
+        <div>Year Founded: <span id="greenville-founded"></span></div>
+        
+        <div>Current Population: <span id="greenville-current-pop"></span></div>
+        
+         <div>Average Rainfall: <span id="greenville-rainfall"></span> inches</div>
+        
+        <div>Greenville Events: <span id="greenville-events"></span></div>
+           <script src="js/othercities.js"></script>
+       
+    <article>
+        <img src="../lesson-7/images/franklin%20breaks%20record.jpg" width="200" height="173" alt="Record Highs in Franklin!" class="imagefix">
+      <p class="textFun">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. 
+                    </p><p>
+                    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. 
+                    </p><p>
+                    Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam. 
+                    </p><p>
+                    Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus magna. Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi lacinia molestie dui. Praesent blandit dolor. Sed non quam. In vel mi sit amet augue congue elementum. Morbi in ipsum sit amet pede facilisis laoreet. Donec lacus nunc, viverra nec, blandit vel, egestas et, augue. 
+                    </p><p>
+                    Vestibulum tincidunt malesuada tellus. Ut ultrices ultrices enim. Curabitur sit amet mauris. Morbi in dui quis est pulvinar ullamcorper. Nulla facilisi. Integer lacinia sollicitudin massa. Cras metus. Sed aliquet risus a tortor. Integer id quam. Morbi mi. Quisque nisl felis, venenatis tristique, dignissim in, ultrices sit amet, augue. Proin sodales libero eget ante. 
+                    </p>
+    
+    </article>		  
+  
+  </main>
+    
+  <footer>
+    <section class="contact">
+      Franklin Weather Center
+      800-123-1234
+      123 Main St. Franklin,MI US 99999
+     <!-- Google Map-->
+    </section>
+    <section class="footer-bar">&copy;2018 | All Rights Reserved | Franklin Weather Center | <a href=".OpenWeatherMap.org"></a> | <span id="day"> Date Placeholder</span>
+    </section>
+  </footer>
+
+    <script src="../lesson-7/js/currentdate.js"></script>
+     
+
+    <script>
+        
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+    </script>
+   
+
+        
+
+   
+    </body>
+</html>
