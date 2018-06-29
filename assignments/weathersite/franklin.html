@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>
+    Franklin Weather Center Image Gallery
+</title>
+    
+     <meta name="description" content="Franklin Weather Center Page, Amanda Bird, CIT230">
+    <link rel="stylesheet" href= "../../styles/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../weathersite/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    
+    
+    
+    
+    
+</head>
+<body>
+
+  <header includefile="headers.html">
+  </header>
+    
+    
+    
+             
+
+
+ 
+<nav includefile="nav.html">
+    
+    </nav>
+    
+    <main>
+        <h2>Franklin Weather Center</h2>
+    <figure class="figure">
+        <img src="../weathersite/images/franklin-medium.jpeg" alt="bluesky" sizes="50vw" 
+             srcset="//weathersite/images/franklin-small.jpeg 800w
+                     ../weathersite/images/franklin-small(phone).jpeg 400w
+                     ">
+    </figure>
+       <section class="weather summary">
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="2">Franklin Current Weather</th>
+                        </tr>
+                    </thead>
+                    <tbody>  
+                        <tr>
+                            <td>Current Temprature</td>
+                            <td><span id="current-temp"></span></td>
+                        </tr>
+                        <tr>
+                            <td>High</td>
+                            <td><span id='high-temp'></span>°F</td>
+                        </tr>
+                        <tr>
+                            <td>Low</td>
+                            <td><span id='low-temp'></span>°F</td>
+                        </tr>
+                        <tr>
+                            <td>Weather Description</td>
+                            <td><span id="weather-description"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Max Wind</td>
+                            <td><span id='wind-speed'></span> mph</td>
+                        </tr>
+                        <tr>
+                            <td>Windchill</td>
+                            <td><span id="windchill"></span>°F</td>
+                        </tr>
+                         <tr>
+                            <th colspan="2"><img src="images/placeholder.png" alt="current weather" id='weather_icon'>
+                            <script src='../weathersite/js/weather.js'></script>
+                             </th>
+                        </tr>
+                    </tbody>
+                </table>
+           <script src="/weathersite/js/weather.js"></script>
+           
+            </section>
+
+ <section class="forecast">
+      <h3>Ten Day Forecast</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Day 1</th>
+            <th>Day 2</th>
+            <th>Day 3</th>
+            <th>Day 4</th>
+            <th>Day 5</th>
+            <th>Day 6</th>
+            <th>Day 7</th>
+            <th>Day 8</th>
+            <th>Day 9</th>
+            <th>Day 10</th>
+          </tr>
+	</thead>
+        <tbody>  
+          <tr>
+            <td>89&deg;F</td>
+            <td>87&deg;F</td>
+            <td>78&deg;F</td>
+            <td>75&deg;F</td>
+            <td>72&deg;F</td>
+            <td>72&deg;F</td>
+            <td>79&deg;F</td>
+            <td>83&deg;F</td>
+            <td>85&deg;F</td>
+            <td>89&deg;F</td>
+          </tr>
+	</tbody>
+      </table>
+    </section>
+    
+    
+    <div class="table2"></div>
+            <h4>Franklin Facts and Events</h4>
+        <div>Franklin Name:<span id="franklin-name"></span></div>
+        
+          <div>Franklin Motto: <span id="franklin-motto"></span></div>
+        
+        <div>Year Founded: <span id="franklin-founded"></span></div>
+        
+        <div>Current Population: <span id="franklin-current-pop"></span></div>
+        
+         <div>Average Rainfall: <span id="franklin-rainfall"></span> inches</div>
+        
+        <div>Franklin Events: <span id="franklin-events"></span></div>
+       <script src="js/othercities.js"></script>
+        
+         <footer includefile="footer.html">
+    
+  </footer>
+
+   <script src="js/include.js"></script>
+    <script src="../weathersite/js/currentdate.js"></script>
+     
+     
+
+    <script>
+        
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+    </script>
+   

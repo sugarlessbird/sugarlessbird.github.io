@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>
+    Franklin Weather Center
+</title>
+    <meta name="description" content="Franklin Weather Center Page, Amanda Bird, CIT230">
+    <link rel="stylesheet" href= "../../styles/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../weathersite/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+   <script src="../weathersite/js/hamburger.js"></script>
+    <script src="js/rating.js"></script>
+    
+    
+    
+    
+</head>
+<body>
+
+   <header includefile="headers.html">
+  </header>
+    
+             
+
+
+ 
+<nav includefile="nav.html">
+    
+    </nav>
+  <main>
+     <h3>HTML Forms</h3>
+
+<form action="thanks.html">
+  Full Name:<br>
+  <input type="text" name="name" value="" required>
+  <br>
+    Email:<br>
+  <input type="text" name="email" value="yourname@email.com">
+  <br>
+    Phone:<br>
+  <input type="tel" name="phone" value="###-###-####" required>
+  <br>Zip:<br>
+  <input type="number" name="zip" value="" required>
+  <br>Storm Date:<br>
+  <input type="date" name="stormdate" value="">
+  <br>Storm Type:<br>
+    <input list="stormtype">
+  <datalist id="stormtype">
+      <option value="flashflood">Flash Flood</option>
+      <option value="hail">Hail</option>
+      <option value="hurricane">Hurricane</option>
+      <option value="thunderstorm">Thunder</option>
+      <option value="sharknado">SharkNado</option>
+    </datalist>
+    <br>
+  <label for="rating">Storm Severity (1 to 10):</label><br>
+		<input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+    <br>
+		<span id="ratingvalue">5</span><br><br>Storm Region:<br>
+  <select name="stormregion">
+      <option selected disabled>Select Region</option>
+      <option value="franklin">Franklin</option>
+      <option value="greenville">Greenville</option>
+      <option value="springfield">Springfield</option>
+    </select>
+  <br><input type="radio" id="dangerYes"
+     name="danger" value="yes">
+    <label for="dangerYes">YES</label>
+
+    <input type="radio" id="dangerMaybe"
+     name="danger" value="maybe">
+    <label for="dangerMaybe">Maybe</label>
+    <input type="radio" id="dangerNo"
+     name="danger" value="no">
+    <label for="dangerNo">No</label>
+  <br>Weather Comments:<br>
+  <textarea name="comments" rows="5" cols="20">
+    Comments Here
+    </textarea>
+  <br><br>
+  <input type="submit" value="Submit">
+</form>    
+  
+  </main>
+    
+  <footer includefile="footer.html">
+    
+  </footer>
+<script src="js/include.js"></script>
+    <script src="../weathersite/js/currentdate.js"></script>
+     
+
+
+    <script>
+        
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+    </script>
+   
+
+        
+
+   
+    </body>
+</html>

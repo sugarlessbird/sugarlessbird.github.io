@@ -1,0 +1,375 @@
+/*GLOBAL APPIES TO ALL BECAUSE IT HAS NO TAG OR CLASS OR ID*/
+{ 
+    margin: 0; 
+    box-sizing: border-box;
+} 
+
+/*No Periods mean applies to TAGS*/
+body { 
+    padding-top: 0px; 
+    margin-top: 0px;
+    font-size: 16px; 
+    line-height: 32px;
+    font-family: 'Raleway', sans-serif;
+    color: cornflowerblue; /*color of text*/
+    padding-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+li {
+ 
+}
+
+p {
+    text-align:left;
+    float: left;
+}
+
+main{
+    padding-top: 0px;
+    padding-bottom: 100px;
+}
+
+section { 
+    overflow: auto;
+    border-bottom-color: darkblue;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    z-index: -12;
+    width: 100%;
+    margin: auto;
+}
+
+h2 {
+    font-size: 25px  ;
+    text-align: center;
+    border-bottom: 1px solid darkblue;
+    
+}
+
+h3 {
+    font-size: 20px ;
+    text-align: center;
+}
+
+h4 {
+    font-size: 20px ;
+    text-align: left;
+}
+
+h5 {
+    font-size: 20px ;
+    text-align: left;
+}
+
+
+h6 {
+    font-size: 20px ;
+    text-align: left;
+}
+
+
+h7 {
+    font-size: 20px ;
+   text-align: center;
+    
+}
+
+article {
+    
+    text-align: center;
+    padding-bottom: 250px;
+}
+
+ 
+
+form {
+    font-size: 20px ;
+    text-align: center;
+}
+
+header, main, footer {
+    max-width:  100% 
+    
+}
+
+footer {
+    position:fixed;
+    text-align:center;
+    background-color: ivory;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+h1 {
+    padding-top: 50px;
+    font-size: 30px;
+    color:#6495ED ;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+header img {    
+    display: flex;
+    align-items: flex-start;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.figure {    
+    
+    text-align: center;
+    
+}
+
+footer { 
+    font-size: 12px;
+    background-color: #6495ED;
+   
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    
+    
+}
+
+footer a{
+    text-decoration: none;
+    background-color: #6495ED;
+}
+
+
+
+table {
+    margin: auto;
+}
+
+ 
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr) ;
+  grid-gap: 10px;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-auto-rows:auto 100px;
+  box-shadow: 10px 10px 5px grey;
+  
+}
+
+.table2 {
+  table-layout: auto;
+  width: 100%;
+border-bottom: 1px solid #ddd;
+  
+}
+
+.table3 {
+  table-layout: auto;
+  width: 100%;
+border-bottom: 1px solid #ddd;
+  
+  
+}
+
+
+
+.media-figure {
+    display: grid;
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: cornflowerblue;
+    padding: .2em;
+    margin-top: 5px;
+    width: 50%;
+    
+}
+
+.media-figure:hover {
+     box-shadow: 1px 1px 5px #999;
+   
+    
+}
+
+th, td {
+    border: 1px solid white;
+    text-align: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+th { 
+    background: #6495ED;
+    color: ivory;
+}
+
+tr:nth-child(even) {
+    background-color: lightgrey;
+}
+
+details { 
+    display: flex;
+}
+
+/*Hashtag means ID*/
+#main {
+    transition: margin-left .5s;
+    padding-top: 20px;
+}
+
+/*.Period means class name any thing you want*/
+.contact { 
+    font-size: 12px;
+    background-color: #6495ED;
+   
+    left: 0;
+    bottom: 30px;
+    width: 100%;
+  
+    position:fixed;
+    text-align:center;
+   
+    color: whitesmoke;
+    display: flex;
+    
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+.imagefix {
+    
+    float:left;
+}
+
+
+
+.topnav {
+  overflow: hidden;
+  background-color: cornflowerblue;
+}
+
+.topnav a {
+  float: left;
+  display: flex;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: black;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+
+
+
+
+/*MEDIUM*/
+@media only screen and (max-width: 64em) {
+ .grid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr) ;
+  grid-gap: 10px;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-auto-rows:auto 100px;
+  
+}
+.media-figure {
+    display: grid;
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: cornflowerblue;
+    padding: .2em;
+    margin-top: 5px;
+    width: 50%;
+    
+    
+    
+} 
+    
+    
+.media-figure:hover {
+    box-shadow: none;
+}
+  
+
+@media only screen and (max-width: 64em) {
+
+}
+
+
+/*END MEDIUM*/
+
+/*MOBILE - SMALL*/
+@media only screen and (max-width: 37.5em) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: flex;
+  }
+.forecast {display:none;}
+    
+    
+.grid {
+  display: grid;
+  grid-template-columns: repeat(1,1fr) ;
+  grid-gap: 10px;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-auto-rows: auto 100px;
+  
+}
+.media-figure {
+    display: grid;
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: cornflowerblue;
+    padding: .2em;
+    margin-top: 5px;
+    width: 50%;
+    
+    
+    
+}
+.media-figure:hover {
+    box-shadow: none;
+}
+    
+
+
+@media only screen and (max-width: 37.5em) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: flex;
+    text-align: left;
+      
+  }
+    
+    
+    .contact {
+        
+        position: relative;
+}
+    }
+
+/*END MOBILE*/
