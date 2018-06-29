@@ -1,4 +1,4 @@
-//alert('yap');
+
 
 function include() {
   let file, xhttp; 
@@ -24,8 +24,4 @@ function include() {
   }
 }
 
-include();  // initial function call
-
-
-
-
+include();

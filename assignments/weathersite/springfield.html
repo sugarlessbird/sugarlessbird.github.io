@@ -1,10 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
-<head> 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>
-    Franklin Weather Center Image Gallery
+    Franklin County Weather Information Center: Springfield
 </title>
     
      <meta name="description" content="Franklin Weather Center Page, Amanda Bird, CIT230">
@@ -14,10 +11,11 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     
     
+    <head includefile="head.html">
+  </head>
     
     
-    
-</head>
+
 <body>
 
   <header includefile="headers.html">
@@ -28,9 +26,24 @@
 
 
  
-<nav includefile="nav.html">
-    
+<nav id="nav">
+    <div class="topnav" id="myTopnav">
+  <a id="myAnchor" href="index.html">Home</a>
+  <a href="franklin.html">Franklin</a>
+  <a href="greenville.html">Greenville</a>
+  <a href="springfield.html" class="active">Springfield</a>
+  <a href="stormcenter.html">Storm Center</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
     </nav>
+
+<h1>
+    Springfield "Where Everyone is Lifted"
+    </h1>
+
     
     <figure class="figure">
         <img src="../weathersite/images/springville%20(Small).jpg" alt="springfield">
@@ -101,11 +114,11 @@
         
         <div>Springfield Events: <span id="springfield-events"></span></div>
          <script src="js/springfieldevents.js"></script>
-        
+    </main>
       <footer includefile="footer.html">
     
   </footer>
-
+    
     <script src="js/include.js"></script>
     <script src="../weathersite/js/currentdate.js"></script>
      
@@ -120,4 +133,9 @@ function myFunction() {
         x.className = "topnav";
     }
     </script>
+       
+</body>
+</html>
+     
+
    

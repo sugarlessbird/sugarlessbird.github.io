@@ -1,10 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
-<head> 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>
-   Greenville "Where Green is our Way of Life!"
+   Franklin County Weather Information Center: Greenville
 </title>
     
      <meta name="description" content="Franklin Weather Center Page, Amanda Bird, CIT230">
@@ -14,10 +11,11 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     
     
+    <head includefile="head.html">
+  </head>
     
     
-    
-</head>
+
 <body>
 
    <header includefile="headers.html">
@@ -28,10 +26,24 @@
 
 
  
-<nav includefile="nav.html">
-    
+<nav id="nav">
+    <div class="topnav" id="myTopnav">
+  <a id="myAnchor" href="index.html" >Home</a>
+  <a href="franklin.html">Franklin</a>
+  <a href="greenville.html" class="active">Greenville</a>
+  <a href="springfield.html">Springfield</a>
+  <a href="stormcenter.html">Storm Center</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
     </nav>
-    
+
+<h1>
+    Greenville "Where Green is our Way of Life!"
+    </h1>
+
      
     <figure class="figure">
         <img src="../weathersite/images/downtown%20greenville%20sc%20real%20estate%20(Small).jpg" alt="greenville">
@@ -122,4 +134,7 @@ function myFunction() {
         x.className = "topnav";
     }
     </script>
-   
+    </main>
+</body>
+</html>
+  
