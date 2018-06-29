@@ -1,5 +1,5 @@
 var townRequest= new XMLHttpRequest();
-    townRequest.open('GET','http://byui-cit230.github.io/weather/data/towndata.json');
+    townRequest.open('GET','//byui-cit230.github.io/weather/data/towndata.json');
     
     townRequest.send();
 
