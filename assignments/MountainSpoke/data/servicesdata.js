@@ -1,5 +1,5 @@
 var request= new XMLHttpRequest();
-    request.open('GET','../MountainSpoke/data/service.json');
+    request.open('GET','https//../MountainSpoke/data/service.json');
     
     request.send();
 
