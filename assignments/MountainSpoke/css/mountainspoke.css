@@ -1,0 +1,627 @@
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+  font-size: 16px;
+  background-color: burlywood;
+  margin:0;
+  padding:0;
+  font-family: arial, helvetica, sans-serif
+
+  
+}
+
+header, main, footer {     
+   color: firebrick;
+   background-color: burlywood;
+   margin-left: 0 auto;
+   margin-right: 0 auto;
+   width: 100%;
+  
+}
+
+header {
+    
+    background-color: #cccc00; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+
+}
+
+nav button {
+    margin: .2rem 2%;
+    background-color: #cc6600;
+    border: none;
+    font-size: 1rem;
+    color: #ffffff;
+    position: absolute;
+    top: 12%;
+    right: 2%;
+}
+
+nav {
+    margin: 1em 0.1em;
+    background-color: #cc6600;
+    
+    }
+    
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #cc6600;
+     
+}
+
+nav ul li a {
+    display: flex;
+    color: #ffffff;
+    text-align: center;
+    justify-content: center;
+    padding: 0.6rem 2rem;
+    text-decoration: none;
+}
+
+nav ul li.active a {
+    background-color: rgba(0,0,0,2);
+}
+
+nav ul li a:hover {
+    background-color: #052d84;
+}
+
+nav ul.hide {
+    display: none;
+}
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #cc6600;
+}
+
+.topnav a {
+  float: left;
+  display: flex;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color:darkblue;
+  color: white;
+}
+
+.active {
+  background-color: black;
+  color: #cc6600;
+}
+
+
+
+
+
+
+
+.topnav .icon {
+  display: none;
+}
+
+
+h1 {
+    display: flex;
+    flex-shrink: 1;
+    flex-wrap: wrap;
+    font-size:  2.2rem;
+    color:  #cc3390 ;
+    text-align: center;
+    
+    
+}
+header img {
+    display: flex;
+    width: 20%;
+    height: auto;
+    
+}
+h2 {
+    
+    color: #cc3390;
+    text-decoration-line: underline;
+    font-size:  1.4rem ;
+    text-align: center;
+    
+}
+header .subheading {
+    display: flex;
+    font-size: 1.2rem;
+    color: #a72170;
+    
+}
+
+.weathersummary{
+    font-size: 1.6em;
+    display: flex;
+    border: none;
+    text-decoration-line: underline;
+    background-color: darkred;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+
+}
+
+.highlow{
+text-align:center;
+align-self: right;
+    font-size: 2.0rem;
+    padding-right: 600px;
+    padding-bottom: 20px; 
+    
+    
+    
+    
+    
+    
+}
+
+.sidebar1{
+    padding-left:250px;
+    align-content: center;
+    align-self: center;
+    float: left;
+    padding-bottom: 20px;
+
+   
+    
+    
+}
+    
+    
+
+
+.franklinimage {
+    height: 100%;
+    width: 50%;
+    
+    
+    }
+
+main {
+   border-size: 2px;
+   border-style: solid;
+    
+}
+main h2 {
+    display: flex;
+    font-size: 2.5rem;
+    color: #cc3300;
+    justify-content: center;
+    
+    
+}
+
+thead {color:black;
+    background-color: #7fb989;
+    font-size: 20px;
+    font-weight: bold;
+    }
+    
+.row1 {
+    color:white;
+    background-color: #99cc00;
+    font-size: 20px;
+    font-weight: bold;
+}
+          
+      
+tr:nth-child(2n+2) {
+    color:black;
+    background-color: #e7f0ed;
+    text-align: center;
+    }
+
+tr:nth-child(2n+3) {
+    color:black;
+    background-color: #e7ffed;
+    text-align: center;
+    
+    }
+
+.googlemaps{
+    text-align: center;
+    justify-content: center;
+    
+}
+
+h3 {
+    text-align: center;
+}
+
+main article p.town-article, p.w-story {
+    padding: 0 1em 1em;
+    word-spacing: 0.2rem;
+    margin-bottom: 0;
+}
+
+
+footer {
+    background-color: #cccc00;
+    color: #000000;
+    font-size: 0.5em;
+    text-align: center;
+    margin-top: 1.5em;
+    padding: 1em 0 1em 0;
+}
+
+.textFun {
+    
+    text-align: center;
+    font-size: 1.2em;
+    align-content: center;
+    
+}
+
+
+
+#franklinevents {
+    justify-content: center;
+    display: flex;
+    background-color: grey;
+    
+}
+
+
+form#w-form {
+    text-align: center;
+    margin-top: 1em; 
+    padding: 0.5em 1em;
+    background-color: yellowgreen;
+}
+
+form fieldset {
+    margin: 1.2em auto;
+    border-radius: 9px;
+}
+
+form legend {
+    color: #ffffff;
+    margin-left: 5%;
+    padding: 0.6em;
+    border: 3px solid black;
+    background-color: #55a6ff;
+    border-radius: 0.6em;
+    
+    font-size: 1.2em;
+}
+
+form label {
+    justify-content: center;
+    align-content: center;
+    display: block;
+    margin: .9em;
+}
+
+form label span {
+    display: block;
+    padding-top: 0.9em;
+    padding-bottom: 0.2em;  
+    font-style: oblique;
+    font-size: 0.9em;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    
+}
+
+.grid div {
+    border: 1px solid rgb(0,95,107);
+    border-radius: 3px;
+    background-color: rgba(0,95,107,0.8);
+    padding: 0.2em;
+
+
+}
+
+
+.grid2 {
+  display: grid;
+  grid-template-columns: max-content;
+  grid-gap: 1px;
+  grid-template-rows: max-content;
+  grid-auto-rows:auto 100px;
+  box-shadow: 10px 10px 5px grey;
+  
+}
+
+
+.media-figure {
+    display: grid;
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color:  yellowgreen;
+    padding: .2em;
+    margin-top: 1px;
+    width: 50%;
+
+     
+    
+}
+
+
+legend {
+    
+    margin: 0 auto;
+    
+}
+.media-figure:hover {
+     box-shadow: 1px 1px 5px #999;
+   
+    
+}
+
+
+header {
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 700px) {
+ .leading {
+    display: flex;
+    align-items: center;
+  }
+}
+
+img:hover {box-shadow: 5px 5px 10px gray;}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 30px;
+  img:hover {box-shadow: 5px 5px 10px gray;}
+
+}
+
+
+
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+
+
+
+.logo {
+  height: 50px;
+  margin-right: 20px;
+}
+
+.leading {
+  height: 240px;
+  margin-bottom: 30px;
+  padding: 30px;
+  color: white;
+  background: url('sunnydaylong.jpeg') center #333 no-repeat;
+  background-size: cover;
+  color: white;
+  text-shadow: 0px 0px 5px #000;
+}
+
+.leading-bigtext {
+  margin-right: 60px;
+  font-weight: bold;
+  font-size: 24vw;
+}
+
+@media (min-width: 700px) {
+  .leading-bigtext {
+    font-size: 140px;
+  }
+}
+
+.leading-text {
+  max-width: 900px;
+  font-size: 1.2em;
+  line-height: 1.4em;
+}
+
+.cards {
+  max-width: 960px;
+  margin: 0 auto 30px;
+}
+
+article {
+  position: relative;
+  img:hover {box-shadow: 5px 5px 10px gray;}
+}
+
+.article-img {
+  height: 200px;
+  width: 25%;
+  object-fit: cover;
+  img:hover {box-shadow: 5px 5px 10px gray;}
+
+}
+li img {
+  height: 200px;
+  width: 50%;
+  object-fit: cover;
+  img:hover {box-shadow: 5px 5px 10px gray;}
+    
+}
+.bikesales{
+    padding-top: 2em;
+    padding-bottom: 
+    text-decoration-line: underline;
+    
+}
+
+.article-title {
+  position: absolute;
+  bottom: 0;    
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+@media only screen and (min-width: 64em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+    
+   
+    
+    nav button { 
+        display:none;
+    }  /* hamburger button does not need to be shown */
+    
+    
+    header h1 {
+        font-size: 5.5em;
+    }
+    
+    header .subheading {
+        font-size: 2em;
+    }
+    
+    nav ul li a {
+        padding: 0.8rem 2rem;
+    }
+    
+   
+        
+    main > .flexbox {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+    }
+    
+    main h2 {
+        margin: 0.5em 1.75em 0 1.75em;
+        padding: 0.3em 0 0 0;
+        font-size: 4em;
+    }
+    
+    main h3 {        
+        font-size: 1.69em;
+    }
+    
+    main section p, article.info p, article.info ul li, p.w-story {
+        font-size:1.3em;
+    }
+    
+
+    
+    table {
+        font-size: 20px;
+        width: 90%;
+    }
+
+    table th, td {
+        border: 0.5px solid black;
+    }
+    
+    main p.town-article {
+        font-size: 1.56em;
+    }
+        
+    main article.container, main .flexbox, .flexbox1{
+        margin: 0 7em 0 7em;
+    }
+    
+    main article.container img, .flexbox1>img { 
+        padding: 1em;
+    }
+    
+    footer {
+        font-size: 1.3em;
+    }
+    
+    main > .grid {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 2em 7em 0;
+    }
+    
+ 
+    
+}
+
+
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+header, main, footer {     
+   color: green;
+   margin-left: 0 auto;
+   margin-right: 0 auto;
+   width: 100%;
+ 
+}
+
+header {
+    
+    background-color: #9afdfe; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+
+}
+
+.weathersummary{
+    flex-shrink: 1;
+    flex-basis: auto;
+    display: flex;
+    border:3px solid;
+    text-decoration-line: underline;
+    background-color: aqua;
+    flex-direction: row;
+    
+
+}
+
+.highlow{
+    align-self: center;
+    flex-direction: column;
+    
+}
+
+/*.sidebar1{
+    padding-left:40px;
+    align-content: center;
+    align-self: center;
+    
+}*/
+    
+    
+}
+
+.franklinimage {
+    width= 100%;
+    align-self: flex-start;
+}
+
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; 
+    
+   section.forecast { display: none; } /* show the 10-day forecast with the medium view and up */ 
+    
+    
+}
