@@ -47,7 +47,7 @@
     
     {
         
-            "Service": "Brake Rework",
+            "name": "Brake Rework",
 			"parts": "$120",
 			"labor": "$50",
 			"total": "$170"
