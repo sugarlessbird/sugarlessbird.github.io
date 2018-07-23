@@ -1,10 +1,10 @@
-var request= new XMLHttpRequest();
-    request.open('GET','https//../MountainSpoke/data/service.json');
+var serviceRequest= new XMLHttpRequest();
+    serviceRequest.open('GET','https://sugarlessbird.github.io/assignments/MountainSpoke/data/service.json');
     
-    request.send();
+    serviceRequest.send();
 
-    request.onload = function() {
-      var data = JSON.parse(request.responseText);
+    serviceRequest.onload = function() {
+      var data = JSON.parse(serviceRequest.responseText);
         console.log(data);
         document.getElementById('row2').innerHTML=data.Services[0].name;
         document.getElementById('parts').innerHTML=data.Services[0].parts;
