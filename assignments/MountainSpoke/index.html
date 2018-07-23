@@ -12,7 +12,9 @@
 <link href="../MountainSpoke/css/mountainspoke.css" rel="stylesheet">
 <link href= "../MountainSpoke/css/normalize.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
-    <script src="../MountainSpoke/js/hamburger.js"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    
      
      	
 </head>
@@ -23,7 +25,7 @@
     
 <header>
     	  
-    <img src="../MountainSpoke/images/bluebike1logo.jpg" alt="TheMountainSpoke site logo" width="20%" height="70em" >
+    <img src="../MountainSpoke/images/bluebike1logo.jpg" alt="TheMountainSpoke site logo" width="20" height="70" >
     <h1>The Mountain Spoke</h1>
     <div class="subheading">Best Bikes in Montana and Beyond!</div>
 	
@@ -55,8 +57,8 @@
   
     
   <main>
-	  <p>
-    <h2 text-align="center">The Mountain Spoke</h2>
+	  <p class=h2>
+      <h2>The Mountain Spoke</h2>
     <h3 >High Adventure, Sales and Service in Beautiful Montana!</h3> 
 	  
 	  
@@ -67,14 +69,14 @@
 
         
     <div class="sidebar1">
-      <img src="../MountainSpoke/images/bikeclouds%20(Small).jpg" alt="Biking in the Clouds" width="60%">
+      <img src="../MountainSpoke/images/bikeclouds%20(Small).jpg" alt="Biking in the Clouds" width="360">
           </div>
       <div class="highlow">
           <p>We Offer:</p>
       
-        <p><a href="../MountainSpoke/adventuretours.html">Bike Adventures!</p>
-        <p><a href="../MountainSpoke/services.html">Bike Repairs!</p>
-        <p><a href="../MountainSpoke/sales.html">Bike Sales!</p> 
+          <p><a href="../MountainSpoke/adventuretours.html">Bike Adventures!</a></p>
+          <p><a href="../MountainSpoke/services.html">Bike Repairs!</a></p>
+          <p><a href="../MountainSpoke/sales.html">Bike Sales!</a></p> 
           
           
      </div> 
@@ -99,11 +101,24 @@
 
   
 
-  <script src="../MountainSpoke/js/hamburger.js"></script>
+  
   <script src="../MountainSpoke/js/currentdate.js"></script>
   
 
 
     
-
+    </div>
+    <script>
+        
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+    </script>
+    </body>
+    
 </html>

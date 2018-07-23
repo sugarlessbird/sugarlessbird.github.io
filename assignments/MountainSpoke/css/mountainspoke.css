@@ -13,8 +13,8 @@ body {
 header, main, footer {     
    color: firebrick;
    background-color: burlywood;
-   margin-left: 0 auto;
-   margin-right: 0 auto;
+   margin-left: auto;
+   margin-right: auto;
    width: 100%;
   
 }
@@ -137,6 +137,13 @@ h2 {
     text-align: center;
     
 }
+
+.h2 {
+    
+   text-align: center;
+    
+}
+
 header .subheading {
     display: flex;
     font-size: 1.2rem;
@@ -158,7 +165,7 @@ header .subheading {
 
 .highlow{
 text-align:center;
-align-self: right;
+align-self: auto;
     font-size: 2.0rem;
     padding-right: 600px;
     padding-bottom: 20px; 
@@ -193,8 +200,8 @@ align-self: right;
     }
 
 main {
-   border-size: 2px;
-   border-style: solid;
+   
+ border-style: solid;
     
 }
 main h2 {
@@ -385,13 +392,13 @@ header {
 
 img:hover {box-shadow: 5px 5px 10px gray;}
 
-.cards {
+/*.cards {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-gap: 30px;
   img:hover {box-shadow: 5px 5px 10px gray;}
 
-}
+}*/
 
 
 
@@ -440,28 +447,34 @@ body {
   margin: 0 auto 30px;
 }
 
-article {
+/*article {
   position: relative;
   img:hover {box-shadow: 5px 5px 10px gray;}
-}
+}*/
 
 .article-img {
   height: 200px;
   width: 25%;
   object-fit: cover;
-  img:hover {box-shadow: 5px 5px 10px gray;}
-
+    
 }
+
+.article-img:hover {box-shadow: 5px 5px 10px gray;}
+
+
 li img {
   height: 200px;
   width: 50%;
   object-fit: cover;
-  img:hover {box-shadow: 5px 5px 10px gray;}
     
 }
+  img:hover {box-shadow: 5px 5px 10px gray;}
+  
+
+
+
 .bikesales{
     padding-top: 2em;
-    padding-bottom: 
     text-decoration-line: underline;
     
 }
@@ -565,8 +578,8 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
 header, main, footer {     
    color: green;
-   margin-left: 0 auto;
-   margin-right: 0 auto;
+   margin-left: auto;
+   margin-right: auto;
    width: 100%;
  
 }
@@ -608,20 +621,82 @@ header {
 }*/
     
     
-}
 
-.franklinimage {
+
+/*.franklinimage {
     width= 100%;
     align-self: flex-start;
-}
+}*/
 
 
-.clearfix:after {
+/*.clearfix:after {
   content: "";
   display: table;
-  clear: both; 
+  clear: both; */
     
    section.forecast { display: none; } /* show the 10-day forecast with the medium view and up */ 
+
+
+/*MOBILE - SMALL*/
+@media only screen and (max-width: 37.5em) {
+      .topnav a:not(:first-child) {
+          display: none;
+        }
+      .topnav a.icon {
+        float: right;
+        display: flex;
+      }
+    .forecast {
+        display:none;
+        }
+
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(1,1fr) ;
+      grid-gap: 10px;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-auto-rows: auto 100px;
+      }
+
+    .media-figure {
+        display: grid;
+        border: 1px solid black;
+        border-radius: 3px;
+        background-color: cornflowerblue;
+        padding: .2em;
+        margin-top: 5px;
+        width: 50%;
+      }
     
-    
+    .media-figure:hover {
+        box-shadow: none;
+    }
+    #myAnchor a {
+        display:"none";
+    }
+    .active {
+        display:"none";
+    }
 }
+
+
+@media only screen and (max-width: 37.5em) {
+     .topnav.responsive {
+      position: relative;
+    }
+     .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    }
+     .topnav.responsive a {
+    float: none;
+    display: flex;
+    text-align: left;
+    }
+     .contact {
+    position: relative;
+    }
+}
+/*END MOBILE*/
