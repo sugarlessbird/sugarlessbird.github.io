@@ -28,7 +28,7 @@ var serviceRequest= new XMLHttpRequest();
         
         document.getElementById('row4').innerHTML=data.Services[4].name;
         document.getElementById('parts4').innerHTML=data.Services[4].parts;
-        document.getElementById('labor4').innerHTML=data.Services[4].labor;
+        
         document.getElementById('total4').innerHTML=data.Services[4].total;
         
         document.getElementById('row5').innerHTML=data.Services[5].name;
