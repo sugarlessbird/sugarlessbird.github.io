@@ -11,9 +11,7 @@
         float: right;
         display: flex;
       }
-    .forecast {
-        display:none;
-        }
+    
 
 
     .grid {
@@ -50,7 +48,19 @@
         font-weight: normal;
         font-size: 6em;
     }   
+  .highlowimage{
+    display:none;
     
+}
+.article-img {
+  height: auto;
+  width: auto;
+  object-fit: cover;
+  max-width: 100%;
+    
+}
+
+.article-img:hover {box-shadow: 5px 5px 10px gray;}
     
 }
 

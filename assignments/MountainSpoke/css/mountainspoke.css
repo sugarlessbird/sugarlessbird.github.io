@@ -157,22 +157,20 @@ header .subheading {
 .highlow{
 text-align:center;
 align-self: auto;
-    font-size: 2.0rem;
-    padding-right: 600px;
-    padding-bottom: 20px; 
-    
-    
-    
-    
-    
-    
+font-size: 2.0rem;
+      
+}
+
+.highlowimage{
+text-align:center;
+align-self: auto;
+font-size: 2.0rem;
 }
 
 .sidebar1{
-    padding-left:250px;
     align-content: center;
     align-self: center;
-    float: left;
+    
     padding-bottom: 20px;
     height:auto;
     width:auto;
@@ -314,30 +312,20 @@ form label span {
 }
 
 
-.media-figure {
-    display: grid;
-    border: 1px solid black;
-    border-radius: 3px;
-    background-color:  yellowgreen;
-    padding: .2em;
-    margin-top: 1px;
-    width: auto;
-    height: auto;
-    max-width: 100%;
-
-     
+.article-img {
+  height: auto;
+  width: auto;
+  object-fit: cover;
+  max-width: 100%;
     
 }
+
+.article-img:hover {box-shadow: 5px 5px 10px gray;}
 
 
 legend {
     
     margin: 0 auto;
-    
-}
-.media-figure:hover {
-     box-shadow: 1px 1px 5px #999;
-   
     
 }
 
@@ -347,45 +335,13 @@ header {
   align-items: center;
 }
 
-@media (min-width: 700px) {
- .leading {
-    display: flex;
-    align-items: center;
-  }
+.salesmenu{
+  height: auto;
+  width: auto;
+  object-fit: cover;
+  max-width: 100%; 
+
+    
 }
-
-img:hover {box-shadow: 5px 5px 10px gray;}
-
-
-
-
-body {
-  font-family: 'Quicksand', sans-serif;
-}
-
-
-
-.logo {
-  height: 50px;
-  margin-right: 20px;
-}
-
-.leading {
-  height: 240px;
-  margin-bottom: 30px;
-  padding: 30px;
-  color: white;
-  background: url('sunnydaylong.jpeg') center #333 no-repeat;
-  background-size: cover;
-  color: white;
-  text-shadow: 0px 0px 5px #000;
-}
-
-.leading-bigtext {
-  margin-right: 60px;
-  font-weight: bold;
-  font-size: 24vw;
-}
-
 
 

@@ -92,7 +92,20 @@ header {
 .highlow{
     align-self: center;
     flex-direction: column;
+    height:auto;
+    width: auto;
+    max-width: 100%;
     
 }
 
+.article-img {
+  height: auto;
+  width: auto;
+  object-fit: cover;
+  max-width: 100%;
+    
+}
+
+.article-img:hover {box-shadow: 5px 5px 10px gray;}
+    
 
